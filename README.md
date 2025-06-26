@@ -13,16 +13,32 @@ A full-stack authentication system built with **Node.js**, **Express**, **MongoD
 
 ## 💡 Key Features
 
-| Feature                 | Description |
-|------------------------|-------------|
-| 🔐 Secure Auth         | Passwords hashed with bcrypt, JWT sessions (HttpOnly) |
-| ✉️ Email Verification | OTP sent with styled HTML email |
-| 🔁 Password Reset      | OTP email + password update form |
-| 🔒 Protected Routes    | Middleware `userAuth.js` checks token |
-| 🖼️ Responsive UI       | TailwindCSS with a playful, cartoon-themed look |
-| ⚙️ Modular Structure   | Clear separation of concerns in backend/frontend |
+| Feature               | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| 🔐 Secure Auth        | Passwords hashed with `bcrypt`, JWT tokens stored in `HttpOnly` cookies     |
+| ✉️ Email Verification | OTP-based email verification with styled HTML emails via Brevo (SMTP)       |
+| 🔁 Password Reset     | OTP verification followed by secure password update flow                    |
+| 🔒 Protected Routes   | `userAuth.js` middleware checks JWT token and protects backend routes       |
+| 🎨 Cartoon UI         | Fun, responsive user interface built with `TailwindCSS`                     |
+| 📦 Modular Codebase   | Clean, maintainable MVC-style structure for backend and frontend separation |
+| 🔍 Environment Config | `.env` support for environment-based secure configuration                   |
+| 💌 SMTP Integration   | Integrated Brevo SMTP for production-ready email delivery                   |
+
 
 ---
+
+## ⚙️ Tech Stack
+
+| Layer         | Technologies Used                                  |
+|---------------|-----------------------------------------------------|
+| **Frontend**  | React, React Router, TailwindCSS                    |
+| **Backend**   | Node.js, Express.js                                 |
+| **Database**  | MongoDB (via Atlas)                                 |
+| **Auth**      | JWT, bcrypt                                         |
+| **Email**     | Brevo SMTP, Nodemailer                              |
+| **Config**    | dotenv                                              |
+| **Others**    | Axios, Cookie-parser                                |
+
 
 ## Test It Out
 - 🔐 Register a new user
