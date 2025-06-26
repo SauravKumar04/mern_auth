@@ -13,14 +13,23 @@ connectDB();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://mern-auth-qhqh.vercel.app",
-  "https://mern-auth-qhqh-64aueieeo-saurav-kumars-projects-a6e06a6e.vercel.app" // ← FULL frontend URL
+  "https://mern-auth-zovp.vercel.app",
 ];
 
 
 app.use(express.json()); // All the request will be parsed using json.
 app.use(cookieParser());
-app.use(cors({ origin: allowedOrigins, credentials: true }));
+app.use(cors({
+  origin: function (origin, callback) {
+    // allow same-origin (curl/postman) if no origin provided
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error(`CORS blocked for ${origin}`));
+    }
+  },
+  credentials: true,
+}));
 
 //API ENDPOINTS
 app.get("/", (req, res) => {
