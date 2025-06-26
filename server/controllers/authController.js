@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import userModel from "../models/userModel.js";
 import { decrypt } from "dotenv";
 import transporter from "../config/nodemailer.js";
-import { EMAIL_VERIFY_TEMPLATE, PASSWORD_RESET_TEMPLATE } from "../config/emailtemplates.js";
+import { EMAIL_VERIFY_TEMPLATE, PASSWORD_RESET_TEMPLATE } from "../config/emailTemplates.js";
 
 //Registration
 
