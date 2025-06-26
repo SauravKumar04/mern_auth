@@ -45,6 +45,13 @@ A full-stack authentication system built with **Node.js**, **Express**, **MongoD
 - ## Reset Password
   <img width="1440" alt="Screenshot 2025-06-26 at 12 58 24 PM" src="https://github.com/user-attachments/assets/e26bbf98-9dbb-4b81-8b08-a45dffef75c2" />
 
+ ## 🚧 What's Next?
+- Add profile update + avatar upload
+- Enable social login (Google, GitHub)
+- Role-based access (admin/user)
+- Improve error handling and UX
+- Add full test coverage (Jest, Supertest)
+
 
 
 
