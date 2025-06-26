@@ -52,6 +52,14 @@ A full-stack authentication system built with **Node.js**, **Express**, **MongoD
 - Improve error handling and UX
 - Add full test coverage (Jest, Supertest)
 
+## 🙌 Contributing
+- Contributions are welcome! Follow these steps:
+- Fork the repository
+- Create your feature branch (git checkout -b feature-name)
+- Commit your changes (git commit -m 'Add some feature')
+- Push to the branch (git push origin feature-name)
+- Open a Pull Request
+
 
 
 
