@@ -12,23 +12,15 @@ const port = process.env.PORT || 4000;
 connectDB();
 
 const allowedOrigins = [
-  "http://localhost:5173", // local dev
-  "https://mern-auth-qhqh.vercel.app" // your Vercel deployed frontend
+  "http://localhost:5173",
+  "https://mern-auth-qhqh.vercel.app",
+  "https://mern-auth-qhqh-64aueieeo-saurav-kumars-projects-a6e06a6e.vercel.app" // ← FULL frontend URL
 ];
+
 
 app.use(express.json()); // All the request will be parsed using json.
 app.use(cookieParser());
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true
-}));
-
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 
 //API ENDPOINTS
 app.get("/", (req, res) => {
