@@ -1,14 +1,3 @@
-# 🛠️ Authentication System
-
-A full-stack authentication system built with **Node.js**, **Express**, **MongoDB**, and **React**, featuring:
-
-- ✅ User Registration & Login
-- 🔐 JWT-based Sessions (stored in secure cookies)
-- ✉️ Email Verification with OTP
-- 🔁 Password Reset flow with OTP
-- 🎨 Cartoonish Frontend using TailwindCSS
-
----
 
 # 🛠️ Authentication System
 
